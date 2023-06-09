@@ -18,10 +18,9 @@ public class CILab implements CILabInterface {
         }
         boolean allUpperCase = myString.equals(myString.toUpperCase());
         boolean allLowerCase = myString.equals(myString.toLowerCase());
-        boolean firstCapitalRestLowerCase = Character.isUpperCase(myString.charAt(0))
-                && myString.substring(1).equals(myString.substring(1).toLowerCase());
+        boolean firstCapital = Character.isUpperCase(myString.charAt(0));
 
-        return allUpperCase || allLowerCase || firstCapitalRestLowerCase;
+        return allUpperCase || allLowerCase || (firstCapital && myString.substring(1).equals(myString.substring(1).toLowerCase()));
     }
 
 
