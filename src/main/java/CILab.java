@@ -16,7 +16,6 @@ public class CILab implements CILabInterface {
         if (myString.isEmpty()) {
             return true;
         }
-
         boolean allUpperCase = myString.equals(myString.toUpperCase());
         boolean allLowerCase = myString.equals(myString.toLowerCase());
         boolean firstCapitalRestLowerCase = Character.isUpperCase(myString.charAt(0))
