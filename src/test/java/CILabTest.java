@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class CILabTest {
 
-    private CILabInterface myString;
+    private CILab myString;
 
     @BeforeEach
     public void setUp() {
